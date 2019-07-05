@@ -11,16 +11,16 @@
 <body>
     <header>
         <!-- navbar  -->
-        <div class="navbar bgColor">
-            <div class="container flexible ">
+        <div class="bgColor">
+            <div class="flexible container">
                 <div class="navLeft">
                     <div>
-                        <img src="URL" alt="Логотип">
+                        <img src="img/logo.png" alt="Логотип">
                     </div>
                 </div>
-                <div ul class="navRight ">
+                <div class="navRight">
                     <div>(097) 963-01-48</div>
-                    <button type="button" class="buttonCall">Заказать звонок</button>
+                    <button type="button" class="button_Grey">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -37,7 +37,11 @@
                     <span class="color_yellow">до конца дня и получите <br> в подарок</span> 
                     солнцезащитный козырек!
                 </p>
-                <div class="timer"></div>
+                <div class="timer">
+                    <span>1</span><span>5</span><span class="dots"></span>
+                    <span>2</span><span>5</span><span class="dots"></span>
+                    <span>0</span><span>5</span>
+                </div>
                 <form>
                     <button type="button" class="button_Yellow">ЗАКАЗАТЬ</button>
                 </form>
@@ -55,15 +59,17 @@
             <h2>характеристики <span class="color_grey"> видеопарктроника</span></h2>
             <hr>
             <div>табличка + фото</div>
-            <button type="button" class="button_Yellow">ЗАКАЗАТЬ</button>
+            <div class=" button_Yellow_center"> 
+                <button type="button" class="button_Yellow">ЗАКАЗАТЬ</button>
+            </div>
         </section>
 
         <!--ПРИЧИНЫ КУПИТЬ ВИДЕОПАРКТРОНИК У НАС-->
         <section>
             <h2><span class="color_grey">причины</span> купить видеопарктроник <span class="color_grey">у нас</span></h2>
             <hr>
-            <ul class="row">
-                <li class="li_reason column">
+            <ul class="row justify-content_center">
+                <li class="li_reason column ">
                     <div class="li_img"> <img src="img/li_car.png" alt="Быстрый и легкий монтаж"> </div>
                     <h4>Быстрый и легкий монтаж</h4>
                     <p>Зеркало с монитором крепится поверх штатного и не требует дополнительных установок.</p>
@@ -87,11 +93,14 @@
         </section>
 
         <!--block with video КАК РАБОТАЕТ ВИДЕОПАРКТРОНИК-->
-        <section>
+        <section class="flex">
             <h2><span class="color_grey">как работает</span> видеопарктроник</h2>
             <hr>
-            "тут буде відео"
-            <video width="400" poster=""></video>
+            <div class="video"> 
+                   
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/etBrjBIXZDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
         </section>
 
         <!--КАК ВЫ ЭКОНОМИТЕ?-->
@@ -115,7 +124,7 @@
                     <img src="img/econom_mirror.png" alt="автопарктроник">
                 </div>
             </div>
-            <div><button type="button" class="button_Yellow">ЗАКАЗАТЬ</button></div>
+            <div class=" button_Yellow_center"><button type="button" class="button_Yellow">ЗАКАЗАТЬ</button></div>
         </div>
         </section>
 
@@ -127,9 +136,11 @@
         </section>
         
         <!--доставка и гарантия -->
+
         <section>
             <h2><span class="color_grey">доставка и гарантия</span></h2>
             <hr>
+        <div class="guaranty column">
             <div>
                 <h3>гарантия</h3>
                 <ul>
@@ -139,58 +150,73 @@
                 </ul>
                 <p>Мы заботимся о своей репутации, клиенты для нас на первом месте!</p>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="URL" alt="фото1">
-                        <p>Оплата при получении</p>
-                    </li>
-                    <li>
-                        <img src="URL" alt="фото2">
-                        <p>2 года гарантии</p>
-                    </li>
-                    <li>
-                        <img src="URL" alt="фото3">
-                        <p>Возврат денег в течении 14 дней</p>
-                    </li>
-                </ul>
+            <div class="row color_yellow">
+                <div class="li_reason column">
+                    <div>
+                        <img src="img/guaranty1.png">
+                    </div>
+                    <p>Оплата при получении</p>
+                </div>
+                <div class="li_reason column">
+                        <div><img src="img/guaranty2.png"></div>
+                    <p>2 года гарантии</p>
+                </div>
+                <div class="li_reason column">
+                        <div><img src="img/guaranty3.png"></div>
+                    <p>Возврат денег в течении 14 дней</p>
+                </div>
             </div>
-            <div>
-                <div>
+            <div class="row">
+                <div class="guaranty_div ">
                     <h3>доставка и оплата по россии</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Стоимость доставки зависит от Вашего региона-города</li>
+                        <li>Доставка почтой РФ 1 классом от 300 руб. EMS Курьер от 600 руб.</li>
+                        <li>Все заказы отправляем с описью вложения</li>
+                        <li>Сроки доставки от 3 до 7 дней.</li>
+                        <li>Оплата производится при получении товара.</li>
                     </ul>
                 </div>
-                <div>
+                <div class="guaranty_div">
                     <h3>доставка и оплата по москве и спб</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Курьером по Москве от 250 руб.</li>
+                        <li>Курьером по Санкт Петербургу от 200 руб.</li>
+                        <li>Сроки доставки 1-2 дня.</li>
+                        <li>Вы также можете забрать и оплатить свой заказ в пункте самовывоза.
+                                Стоимость 100 руб.</li>
+                        <li>Ближайший к Вам адрес самовывоза уточняйте по телефону.</li>
+                        <li>Оплата производится наличными при получении.</li>
+                        <li>У Вам есть уникальная возможность вскрыть посылку до ее оплаты!</li>
                     </ul>
                 </div>
             </div>
+        </div>
         </section>
         <!-- -->
         <section>
-            <h2>закажите свой видеопарктроник до конца дня и получите в подарок антибликовое стекло</h2>
+            <h2><span class="color_grey">закажите свой видеопарктроник</span> до конца дня <br>
+                <span class="color_grey">и</span> получите в подарок 
+                <span class="color_grey">антибликовое стекло</span></h2>
             <hr>
-            <img src="URL" alt="фото зеркало с ценой">
-            <form>
-                <input name="login" required="required" placeholder="Введите имя">
+        <div class="row justify-content_center">
+            <div class="withBG">
+                <img src="img/foot_mirror.png" alt="Автопарктроник с ценой">
+            </div>
+            <form class="column">
+                <input type="text" required="required" placeholder="Введите имя">
                 <input id="inputPhone" name="phone" type="tel" maxlength="50" required="required" placeholder="+7(___)___-__-__">
-                <div></div>
-                <button type="button" class="buttonOrder">Заказать</button>
+                <div class="timer timer2">
+                    <span>1</span><span>5</span>
+                        <span class="dot"></span>
+                    <span>2</span><span>5</span><span class="dot"></span>
+                    <span>0</span><span>5</span>
+                </div>
+                <div class=" button_Yellow_center"> 
+                    <button type="button" class="button_Yellow">ЗАКАЗАТЬ</button>
+                </div>
             </form>
+        </div>
         </section>
     </main>
     <footer></footer>
