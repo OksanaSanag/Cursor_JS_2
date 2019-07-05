@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans&display=swap');
+
+* { margin: 0; padding: 0; border: 0; }
+
+body {
+    font-family: Helvetica, 'Montserrat', 'Noto Sans'; 
+    background: #fff;
+    color: #333333;
+    font-size: 14px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+
+section { margin: 5% 10%; }
+
+h1 { 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    line-height: 2;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffdc00;
+    margin: 0.8rem;
+}
+h4 { 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    color: #ffdc00;
+    background-color: #ffdc00;
+    border: none;
+    height: 2.5px;
+    margin: 2rem 30rem 3rem;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLeft {
+    margin: 20px 0 0 60px;
+}
+
+.navRight { display: flex;
+    margin: 20px 60px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.withBackGround { 
+    background-image: url(img/backGround.png);
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;   
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.withBG { margin-right: 50px; }
+
+.timer { margin: 3rem;}
+
+.button_Yellow {
+    color: #333333;
+    background: #ffdc00;
+    font-size: 1.3rem;
+    padding: 0.7em 2.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: inset 0 -5px 0 0 #b9a000;
+    margin-top: 3rem;
+}
+.button_Yellow:hover { background: #ffe74f; } 
+
+.li_reason {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+.li_reason h4 { margin: 1rem;}
+.li_reason p { text-align: center; padding: 0 1.4rem ;}
+.li_img { height: 60px;}
+
+
+
+
+/* direction */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* colors */
+.bgColor { background: #ffdc00; }
+
+.color_yellow { color: #ffe74f; font-weight: bold; }
+.color_grey { color: #333333; }
+
+
+
+
+
